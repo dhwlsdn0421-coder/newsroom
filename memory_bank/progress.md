@@ -8,3 +8,4 @@
 - 2025-03-14 · Qt 플랫폼 플러그인 경로 설정 (Windows "no Qt platform plugin" 대응)
 - 2025-03-14 · Git 리포지토리 초기화, .gitignore 추가
 - 2025-03-14 · memory_bank 전반 업데이트 및 푸시 준비
+- 2025-03-14 · **FastAPI 뉴스룸 백엔드 MVP 완성**: GET /health, POST /summarize, RSS 수집(rss_fetcher·feedparser), Gemini 요약(summary_service·GEMINI_API_KEY), news 라우터, .env/.env.sample, load_dotenv(프로젝트 루트 기준), GitHub 리포지토리 newsroom 생성 및 origin 설정

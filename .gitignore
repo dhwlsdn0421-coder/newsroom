@@ -1,3 +1,6 @@
+# Env (API 키 등)
+.env
+
 # Python
 __pycache__/
 *.py[cod]

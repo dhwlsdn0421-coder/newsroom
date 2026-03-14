@@ -6,7 +6,10 @@ import sys
 # Qt 플랫폼 플러그인 경로 설정 (Windows에서 "no Qt platform plugin could be initialized" 방지)
 try:
     import PyQt5
-    _qt_platforms = os.path.join(os.path.dirname(PyQt5.__file__), "Qt5", "plugins", "platforms")
+    if getattr(sys, "frozen", False) and getattr(sys, "_MEIPASS", None):
+        _qt_platforms = os.path.join(sys._MEIPASS, "PyQt5", "Qt5", "plugins", "platforms")
+    else:
+        _qt_platforms = os.path.join(os.path.dirname(PyQt5.__file__), "Qt5", "plugins", "platforms")
     if os.path.isdir(_qt_platforms):
         os.environ["QT_QPA_PLATFORM_PLUGIN_PATH"] = _qt_platforms
 except Exception:
