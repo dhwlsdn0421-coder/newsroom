@@ -18,9 +18,9 @@ ENV_API_KEY = "GEMINI_API_KEY"
 ENV_MODEL = "GEMINI_MODEL"
 
 # 모델 선택 (교육용 주석)
-# 기본: gemini-2.0-flash (안정·속도 우선)
-# 실험판: gemini-2.0-flash-exp (GEMINI_MODEL로 지정 시)
-DEFAULT_MODEL = "gemini-2.0-flash"
+# 기본: gemini-2.5-flash (현재 API에서 사용 가능)
+# GEMINI_MODEL 환경 변수로 다른 모델 지정 가능
+DEFAULT_MODEL = "gemini-2.5-flash"
 
 # API 실패 시 각 필드에 넣을 기본값
 FALLBACK_AI_SUMMARY = "요약을 생성하지 못했습니다."
